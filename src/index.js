@@ -86,6 +86,7 @@ const FollowAt = props => {
       {links.map((link) => {
         let socialMedia = String(extractDomain(link)).toLowerCase();
         let icon = getIcon(socialMedia);
+        let label = `Follow us on ${String(extractDomain(link)).toLowerCase()}`;
         return (
           <a
             key={socialMedia}
@@ -93,6 +94,8 @@ const FollowAt = props => {
             className={`${computedStyles.social} ${
               computedStyles[socialMedia]
             }`}
+            label={label}
+            title={label}
           >
             <FontAwesomeIcon icon={icon} size={`${iconSize}x`} />
           </a>

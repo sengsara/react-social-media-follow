@@ -9,10 +9,13 @@
   },
   "peerDependencies": {
     "react": "^16.8.0"
-  },
+  },  
   "scripts": {
     "start": "webpack --watch",
-    "build": "webpack"
+    "build": "webpack",
+    "storybook": "start-storybook -p 9001",
+    "storybook:build": "build-storybook --loglevel error --quiet",
+    "storybook:preview": "serve storybook-static"
   },
   "author": {
     "name": "Ahmd Salhi",
@@ -28,6 +31,22 @@
     "withstyles": "^1.0.3"
   },
   "devDependencies": {
+    "@storybook/react": "^5.3.12",
+    "@storybook/addon-comments": "^3.2.19",
+    "@storybook/addon-actions": "^5.3.12",
+    "@storybook/addon-knobs": "^5.3.12",
+    "@storybook/addon-links": "^5.3.12",
+    "@storybook/addon-notes": "^5.3.12",
+    "@storybook/addon-options": "^5.3.12",
+    "@storybook/addon-jest": "^5.3.12",
+    "@storybook/addons": "^5.3.12",
+    "@storybook/addon-backgrounds": "^5.3.12",
+    "@storybook/addon-centered": "^5.3.12",
+    "@storybook/addon-storyshots": "^5.3.12",
+    "@storybook/addon-storysource": "^5.3.12",
+    "@storybook/api": "^5.3.12",
+    "@storybook/components": "^5.3.12",
+    "@storybook/theming": "^5.3.12",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
@@ -35,6 +54,7 @@
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.7.0",
     "webpack-cli": "^3.0.4",
-    "react": "^16.4.0"
+    "react": "^16.4.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.0-7"
   }
 }
