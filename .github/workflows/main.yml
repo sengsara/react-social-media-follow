@@ -22,3 +22,5 @@ jobs:
         if: contains(github.ref, 'master')
         with:
           token: ${{ secrets.NPM_TOKEN }}
+          access: public
+
